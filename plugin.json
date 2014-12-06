@@ -4,10 +4,20 @@
     "description": "NodeBB Plugin that allows users to use colors in their posts.", 
     "url": "https://github.com/Toolito/nodebb-plugin-colors", 
     "library": "./library.js",	
+    "staticDirs": {
+		"images": "lib/colorpicker/images"
+	},
     "hooks": [
 		{ "hook": "static:app.load", "method": "onLoad" },
         	{ "hook": "filter:parse.post", "method": "parsePost", "priority": 7 },
         	{ "hook": "filter:parse.signature", "method": "parseSignature", "priority": 7 },
-        	{ "hook": "filter:parse.raw", "method": "parseRaw", "priority": 7 },
+        	{ "hook": "filter:parse.raw", "method": "parseRaw", "priority": 7 }
+	],
+	"less": [
+		"lib/colorpicker/css/colorpicker.less"
+	],
+	"scripts": [
+		"./button.js",
+		"lib/colorpicker/js/colorpicker.js"
 	]
 }
