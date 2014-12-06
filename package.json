@@ -12,9 +12,7 @@
     "colors"
   ],
   "license": "MIT",
-   "dependencies": {
-    "remarkable": "^1.3.0"
-  },
+   "dependencies": {},
   "bugs": {
     "url": "https://github.com/Toolito/nodebb-plugin-colors/issues"
   },
